@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url("bg.jpg")  rgba(0, 0, 0, 0.6);
+    background: url('media/bg.jpg')  rgba(0, 0, 0, 0.6);
     background-blend-mode: multiply;
     color:white;
     background-size: cover;
@@ -17,6 +17,13 @@ body{
     align-items: center;
     text-align: center;
    font-family:"Poppins", sans-serif;
+}
+
+@media (max-width:425px){
+    body{
+        background-repeat: no-repeat;
+        background-position: -250px;
+    }
 }
 
 #overlay{
@@ -66,6 +73,7 @@ body{
 .button:hover{
     height: 60px;
     width: 500px;
+    margin-top:11px;
 }
 
 #sty{
